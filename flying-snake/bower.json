@@ -1,0 +1,22 @@
+{
+  "name": "flying-snake",
+  "version": "0.0.0",
+  "authors": [
+    "Owumaro <antoinematyja@free.fr>"
+  ],
+  "description": "HTML5 snake-inspired game",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "jquery-color": "~2.1.2",
+    "fastclick": "~1.0.3"
+  }
+}
