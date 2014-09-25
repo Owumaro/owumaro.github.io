@@ -32,6 +32,11 @@ var intro = function() {
     // Clear canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.canvas.width = ctx.canvas.width; // android stock browser fix for clearRect
+    
+    // Stroke settings
+    ctx.strokeStyle = '#000';
+    ctx.lineWidth = 40.0;
+    ctx.lineCap = 'square';
 
     // Generate next position
     snake.nextPosition();
