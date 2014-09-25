@@ -3,6 +3,7 @@ FastClick.attach(document.body);
 $('#game').hide();
 $('#lose').hide();
 $('#scores').hide();
+updateScores();
 intro();
 
 // Transitions

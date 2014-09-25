@@ -79,7 +79,7 @@ var game = function() {
     }, 10);
   });
   
-  $(window).on('mouseup', function() {
+  $(window).on('mouseup', function(evt) {
     evt.preventDefault();
     clearInterval(touchInterval);
   });
@@ -157,11 +157,6 @@ var game = function() {
     // check for item collision
     score = items.check(snake, score);
     
-    // check if player sucks
-    if (snake.getLength() < 2) {
-      endGame();
-    }
-    
     // difficulty increasing
     if (progression === 50) {
       mineProbaAppear = 0.1;
@@ -189,6 +184,11 @@ var game = function() {
     // score
     score += snake.getLength();
     $('#score').html(score);
+    
+    // check if player sucks
+    if (snake.getLength() < 2) {
+      endGame();
+    }
   }, 110);
   
   // particles interval
@@ -205,6 +205,35 @@ var game = function() {
     // remove bindings
     $(window).unbind();
     
+    // save score
+    if (typeof(Storage) !== "undefined") {
+      // get array from localStorage
+      var scoresStorage = localStorage.getItem("scores");
+      if (!scoresStorage) {
+        scoresStorage = [];
+      } else {
+        scoresStorage = JSON.parse(scoresStorage);
+      }
+      
+      // if new high score
+      if (scoresStorage.length < 5 || score > scoresStorage[scoresStorage.length-1]) {
+        // insert in array
+        scoresStorage.push(score);
+        function sortNumber(a,b) { return b-a; }
+        scoresStorage.sort(sortNumber);
+        // remove last if needed
+        if (scoresStorage.length === 6) scoresStorage.pop();
+      }
+      
+      localStorage.setItem("scores", JSON.stringify(scoresStorage));
+    } else {
+      // Sorry! No Web Storage support..
+    }
+    
+    // update scores
+    updateScores();
+    
+    // transition
     $('body').animate({backgroundColor:'#ff4c4c'}, function() {
       $('#lose').fadeIn();
       lose();

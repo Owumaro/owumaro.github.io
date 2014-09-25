@@ -31,6 +31,7 @@ var intro = function() {
   var introInterval = setInterval(function() {
     // Clear canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.canvas.width = ctx.canvas.width; // android stock browser fix for clearRect
 
     // Generate next position
     snake.nextPosition();
