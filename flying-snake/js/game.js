@@ -189,7 +189,7 @@ var game = function() {
     if (snake.getLength() < 2) {
       endGame();
     }
-  }, 110);
+  }, 130);
   
   // particles interval
   var particlesInterval = setInterval(function() {
