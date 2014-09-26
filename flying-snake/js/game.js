@@ -2,11 +2,6 @@
 var cols = 9;
 var rows = 20;
 
-var clearCanvas = function() {
-  var canvas = $('#game canvas')[0];
-  canvas.width = canvas.width;
-}
-
 var game = function() {
   console.log('Game called');
 
