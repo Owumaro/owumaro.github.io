@@ -15,7 +15,7 @@
 
 body {
   margin:0;
-  background-color: #84c455;
+  background-color: #8bc34a;
   font-family: '04b_03';
   text-transform: uppercase;
 }
@@ -51,6 +51,8 @@ div.title {
   font-size:48px;
   font-weight: normal;
   white-space: nowrap;
+  color:#fff;
+  text-shadow: rgb(0, 0, 0) 5px 0px 0px, rgb(0, 0, 0) 4px 1px 0px, rgb(0, 0, 0) 4px 1px 0px, rgb(0, 0, 0) 4px 2px 0px, rgb(0, 0, 0) 3px 3px 0px, rgb(0, 0, 0) 2px 4px 0px, rgb(0, 0, 0) 1px 4px 0px, rgb(0, 0, 0) 0px 4px 0px, rgb(0, 0, 0) 0px 5px 0px, rgb(0, 0, 0) -1px 4px 0px, rgb(0, 0, 0) -2px 4px 0px, rgb(0, 0, 0) -2px 4px 0px, rgb(0, 0, 0) -3px 3px 0px, rgb(0, 0, 0) -4px 2px 0px, rgb(0, 0, 0) -4px 1px 0px, rgb(0, 0, 0) -4px 0px 0px, rgb(0, 0, 0) -5px 0px 0px, rgb(0, 0, 0) -4px -1px 0px, rgb(0, 0, 0) -4px -2px 0px, rgb(0, 0, 0) -3px -3px 0px, rgb(0, 0, 0) -3px -3px 0px, rgb(0, 0, 0) -2px -4px 0px, rgb(0, 0, 0) -1px -4px 0px, rgb(0, 0, 0) 0px -4px 0px, rgb(0, 0, 0) 0px -4px 0px, rgb(0, 0, 0) 1px -4px 0px, rgb(0, 0, 0) 2px -4px 0px, rgb(0, 0, 0) 3px -3px 0px, rgb(0, 0, 0) 3px -3px 0px, rgb(0, 0, 0) 4px -2px 0px, rgb(0, 0, 0) 4px -1px 0px, rgb(0, 0, 0) 4px 0px 0px;
 }
 
 @media (max-width: 600px) {
@@ -114,6 +116,8 @@ button.hover {
   width:100%;
   text-align: center;
   font-size:64px;
+  color:#fff;
+  text-shadow: rgb(0, 0, 0) 5px 0px 0px, rgb(0, 0, 0) 4px 1px 0px, rgb(0, 0, 0) 4px 1px 0px, rgb(0, 0, 0) 4px 2px 0px, rgb(0, 0, 0) 3px 3px 0px, rgb(0, 0, 0) 2px 4px 0px, rgb(0, 0, 0) 1px 4px 0px, rgb(0, 0, 0) 0px 4px 0px, rgb(0, 0, 0) 0px 5px 0px, rgb(0, 0, 0) -1px 4px 0px, rgb(0, 0, 0) -2px 4px 0px, rgb(0, 0, 0) -2px 4px 0px, rgb(0, 0, 0) -3px 3px 0px, rgb(0, 0, 0) -4px 2px 0px, rgb(0, 0, 0) -4px 1px 0px, rgb(0, 0, 0) -4px 0px 0px, rgb(0, 0, 0) -5px 0px 0px, rgb(0, 0, 0) -4px -1px 0px, rgb(0, 0, 0) -4px -2px 0px, rgb(0, 0, 0) -3px -3px 0px, rgb(0, 0, 0) -3px -3px 0px, rgb(0, 0, 0) -2px -4px 0px, rgb(0, 0, 0) -1px -4px 0px, rgb(0, 0, 0) 0px -4px 0px, rgb(0, 0, 0) 0px -4px 0px, rgb(0, 0, 0) 1px -4px 0px, rgb(0, 0, 0) 2px -4px 0px, rgb(0, 0, 0) 3px -3px 0px, rgb(0, 0, 0) 3px -3px 0px, rgb(0, 0, 0) 4px -2px 0px, rgb(0, 0, 0) 4px -1px 0px, rgb(0, 0, 0) 4px 0px 0px;
 }
 
 @media (max-width: 600px) {
