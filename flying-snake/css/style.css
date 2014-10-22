@@ -65,9 +65,28 @@ div.title, div.buttons, div.footer {
   margin: 25px 0;
 }
 
+div.footer a {
+  text-decoration: none;
+}
+
+div.footer img {
+  width:48px;
+}
+
+@media (max-width: 600px) {
+  div.footer {
+    font-size:12px;
+  }
+  
+  div.footer img {
+    width:32px;
+  }
+}
+
 button {
-  background-color:transparent;
-  border:3px solid #000;
+  background-color:#000;
+  color:#fff;
+  border:0;
   border-radius:6px;
   padding:10px 15px;
   margin: 15px;
@@ -79,23 +98,17 @@ button {
   button {
     font-size:18px;
     padding:7px 10px;
+    margin: 5px;
   }
 }
 
 button.hover {
-  color:#fff;
-  border-color: #fff;
+  background-color:#fff;
 }
 
 /* Intro */
 #intro canvas {
   max-width:80%;
-}
-
-@media (max-height: 500px) {
-  #intro .footer {
-    display:none;
-  }
 }
 
 /* Game */
@@ -129,10 +142,6 @@ button.hover {
 /* Lose */
 #lose .inner {
   max-width:600px;
-}
-
-#lose .inner button {
-  background-color:#ff4c4c;
 }
 
 /* Scores */
