@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    
+
     <!-- Intro -->
     <div class="outer" id="intro">
       <div class="middle">
@@ -16,36 +16,43 @@
           <div class="title">Flying Snake</div>
 
           <canvas>Your browser doesn't support HTML5 canvas.</canvas>
-          
+
           <div class="buttons">
             <button>&lt;&lt; Play</button>
             <button>Scores &gt;&gt;</button>
           </div>
-          
+
           <div class="footer">
-            <a href="https://github.com/Owumaro" target="_blank">
-              <img src="img/owumaro.gif">
-              <br />Owumaro
-            </a>
+            <div>
+              <a href="https://play.google.com/store/apps/details?id=com.owumaro.flying_snake_mobile" target="_blank">
+                <img src="img/googleplay.png" id="googleplay">
+              </a>
+            </div>
+            <div>
+              <a href="https://github.com/Owumaro" target="_blank">
+                <img src="img/owumaro.gif" id="owumaro">
+                <br>Owumaro
+              </a>
+            </div>
           </div>
-          
+
         </div>
       </div>
     </div>
-    
+
     <!-- Game -->
     <div id="game">
       <div id="score">0</div>
-      
+
       <canvas>Your browser doesn't support HTML5 canvas.</canvas>
     </div>
-    
+
     <!-- Lose -->
     <div class="outer" id="lose">
       <div class="middle">
         <div class="inner">
           <div class="title">You lose...</div>
-          
+
           <div class="buttons">
             <button>&lt;&lt; Home</button>
             <button>Play again</button>
@@ -54,7 +61,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Scores -->
     <div class="outer" id="scores">
       <div class="middle">
@@ -86,18 +93,18 @@
               </tr>
             </tbody>
           </table>
-          
+
           <button>&lt;&lt; Home</button>
-          
+
         </div>
       </div>
     </div>
-    
+
     <!-- Sound -->
     <div id="sound">
       <button><img src="img/sound_on.gif"></button>
     </div>
-    
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/jquery-color/jquery.color.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>

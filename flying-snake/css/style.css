@@ -65,11 +65,24 @@ div.title, div.buttons, div.footer {
   margin: 25px 0;
 }
 
+div.footer {
+  padding-top:20px;
+}
+
+div.footer div {
+  display:inline-block;
+  margin:0 5px;
+}
+
 div.footer a {
   text-decoration: none;
 }
 
-div.footer img {
+div.footer img#googleplay {
+  margin-bottom:px;
+}
+
+div.footer img#owumaro {
   width:48px;
 }
 
@@ -78,7 +91,7 @@ div.footer img {
     font-size:12px;
   }
   
-  div.footer img {
+  div.footer img#owumaro {
     width:32px;
   }
 }
