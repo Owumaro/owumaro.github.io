@@ -5,6 +5,12 @@
     <title>bootstrap-header-navbar</title>
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+      /* Important ! */
+      .navbar-brand {
+        height: auto;
+      }
+      
+      /* Next properties can be replaced. */
       .main {
         margin-top: 110px;
         height: 2000px;
@@ -22,6 +28,12 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -50,6 +62,10 @@
       <p>Alii summum decus in carruchis solito altioribus et ambitioso vestium cultu ponentes sudant sub ponderibus lacernarum, quas in collis insertas cingulis ipsis adnectunt nimia subtegminum tenuitate perflabiles, expandentes eas crebris agitationibus maximeque sinistra, ut longiores fimbriae tunicaeque perspicue luceant varietate liciorum effigiatae in species animalium multiformes.</p>
     </div>
 
+    <!-- Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    
     <!-- Skrollr -->
     <script type="text/javascript" src="bower_components/skrollr/dist/skrollr.min.js"></script>
     <script type="text/javascript">
@@ -66,8 +82,8 @@
       var scrollEnd = headerHeight - navbarHeight;
 
       var bar = document.querySelector('nav');
-      bar.setAttribute('data-0', 'height:' + headerHeight + 'px;');
-      bar.setAttribute('data-' + scrollEnd, 'height:' + navbarHeight + 'px;');
+      /*bar.setAttribute('data-0', 'height:' + headerHeight + 'px;');
+      bar.setAttribute('data-' + scrollEnd, 'height:' + navbarHeight + 'px;');*/
 
       var brand = document.querySelector('.navbar-brand');
       brand.setAttribute('data-0', 'font-size:' + headerBrandFontSize + ';line-height:' + (headerHeight - 30) + 'px;');
@@ -78,6 +94,10 @@
         links[i].setAttribute('data-0', 'font-size:' + headerLinksFontSize + ';line-height:' + (headerHeight - 30) + 'px;');
         links[i].setAttribute('data-' + scrollEnd, 'font-size:' + navbarLinksFontSize + ';line-height:' + (navbarHeight - 30) + 'px;');
       }
+      
+      var button = document.querySelector('button.navbar-toggle');
+      button.setAttribute('data-0', 'margin-top:' + (headerHeight-34)/2 + 'px;');
+      button.setAttribute('data-' + scrollEnd, 'margin-top:' + (navbarHeight-34)/2 + 'px;');
 
       // Activate Skrollr
       var s = skrollr.init({
