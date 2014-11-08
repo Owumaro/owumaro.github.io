@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>bootstrap-header-navbar</title>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .main {
+        margin-top: 110px;
+        height: 2000px;
+      }
+
+      .main p {
+        text-align: justify;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Header/navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-share"></span> Share</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Your content here... -->
+    <div class="container main">
+      <p>Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam diligentiam adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat.</p>
+
+      <p>Victus universis caro ferina est lactisque abundans copia qua sustentantur, et herbae multiplices et siquae alites capi per aucupium possint, et plerosque mos vidimus frumenti usum et vini penitus ignorantes.</p>
+
+      <p>Quaestione igitur per multiplices dilatata fortunas cum ambigerentur quaedam, non nulla levius actitata constaret, post multorum clades Apollinares ambo pater et filius in exilium acti cum ad locum Crateras nomine pervenissent, villam scilicet suam quae ab Antiochia vicensimo et quarto disiungitur lapide, ut mandatum est, fractis cruribus occiduntur.</p>
+
+      <p>Iam virtutem ex consuetudine vitae sermonisque nostri interpretemur nec eam, ut quidam docti, verborum magnificentia metiamur virosque bonos eos, qui habentur, numeremus, Paulos, Catones, Galos, Scipiones, Philos; his communis vita contenta est; eos autem omittamus, qui omnino nusquam reperiuntur.</p>
+
+      <p>Alii summum decus in carruchis solito altioribus et ambitioso vestium cultu ponentes sudant sub ponderibus lacernarum, quas in collis insertas cingulis ipsis adnectunt nimia subtegminum tenuitate perflabiles, expandentes eas crebris agitationibus maximeque sinistra, ut longiores fimbriae tunicaeque perspicue luceant varietate liciorum effigiatae in species animalium multiformes.</p>
+    </div>
+
+    <!-- Skrollr -->
+    <script type="text/javascript" src="bower_components/skrollr/dist/skrollr.min.js"></script>
+    <script type="text/javascript">
+      // Parameters
+      var headerHeight = 100;
+      var headerBrandFontSize = '36px';
+      var headerLinksFontSize = '28px';
+
+      var navbarHeight = 50;
+      var navbarBrandFontSize = '18px';
+      var navbarLinksFontSize = '14px';
+
+      // Settings parameters to DOM before loading Skrollr
+      var scrollEnd = headerHeight - navbarHeight;
+
+      var bar = document.querySelector('nav');
+      bar.setAttribute('data-0', 'height:' + headerHeight + 'px;');
+      bar.setAttribute('data-' + scrollEnd, 'height:' + navbarHeight + 'px;');
+
+      var brand = document.querySelector('.navbar-brand');
+      brand.setAttribute('data-0', 'font-size:' + headerBrandFontSize + ';line-height:' + (headerHeight - 30) + 'px;');
+      brand.setAttribute('data-' + scrollEnd, 'font-size:' + navbarBrandFontSize + ';line-height:' + (navbarHeight - 30) + 'px;');
+
+      var links = document.querySelectorAll('.navbar-nav>li>a');
+      for (var i=0; i<links.length; i++) {
+        links[i].setAttribute('data-0', 'font-size:' + headerLinksFontSize + ';line-height:' + (headerHeight - 30) + 'px;');
+        links[i].setAttribute('data-' + scrollEnd, 'font-size:' + navbarLinksFontSize + ';line-height:' + (navbarHeight - 30) + 'px;');
+      }
+
+      // Activate Skrollr
+      var s = skrollr.init({
+        smoothScrolling: false,
+        forceHeight: false
+      });
+    </script>
+
+  </body>
+</html>
