@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Radio Loot</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Header/navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Radio Loot <small>EU-Hyjal</small></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="pres.html">Présentation</a></li>
+            <li><a href="post.html">Postuler</a></li>
+            <li><a href="forum.html">Forum</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container content">
+
+      <!-- Pres -->
+      <div class="page">
+        <div class="article">
+          Caler le phpBB ici.
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!--<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
+    <!--<script src="bower_components/bootstrap/js/collapse.js"></script>
+<script src="bower_components/bootstrap/js/transition.js"></script>-->
+
+    <!-- Avancée : tooltip -->
+    <!--<script src="bower_components/bootstrap/js/tooltip.js"></script>-->
+    <script>
+      $('.progress').tooltip({html: true, animation: false});
+    </script>
+
+    <!-- Skrollr -->
+    <script type="text/javascript" src="bower_components/skrollr/dist/skrollr.min.js"></script>
+    <script type="text/javascript">
+      // Parameters
+      var headerHeight = 100;
+      var headerBrandFontSize = '48px';
+      var headerLinksFontSize = '20px';
+
+      var navbarHeight = 50;
+      var navbarBrandFontSize = '32px';
+      var navbarLinksFontSize = '20px';
+
+      // Settings parameters to DOM before loading Skrollr
+      var scrollEnd = headerHeight - navbarHeight;
+
+      var brand = document.querySelector('.navbar-brand');
+      brand.setAttribute('data-0', 'font-size:' + headerBrandFontSize + ';line-height:' + (headerHeight - 30) + 'px;');
+      brand.setAttribute('data-' + scrollEnd, 'font-size:' + navbarBrandFontSize + ';line-height:' + (navbarHeight - 30) + 'px;');
+
+      var links = document.querySelectorAll('.navbar-nav>li>a');
+      for (var i=0; i<links.length; i++) {
+        links[i].setAttribute('data-0', 'font-size:' + headerLinksFontSize + ';line-height:' + (headerHeight - 30) + 'px;');
+        links[i].setAttribute('data-' + scrollEnd, 'font-size:' + navbarLinksFontSize + ';line-height:' + (navbarHeight - 30) + 'px;');
+      }
+
+      var button = document.querySelector('button.navbar-toggle');
+      button.setAttribute('data-0', 'margin-top:' + (headerHeight-34)/2 + 'px;');
+      button.setAttribute('data-' + scrollEnd, 'margin-top:' + (navbarHeight-34)/2 + 'px;');
+
+      // Activate Skrollr
+      var s = skrollr.init({
+        forceHeight: false
+      });
+    </script>
+
+  </body>
+</html>

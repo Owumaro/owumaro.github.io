@@ -1,0 +1,168 @@
+@import url("http://fonts.googleapis.com/css?family=Orbitron");
+@font-face {
+  font-family: 'AR Techni LB';
+  src: url("AR Techni LB.ttf"); }
+/* Variables */
+/* Global */
+body {
+  background-image: url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed; }
+
+a {
+  color: #d9534f; }
+
+a:hover,
+a:focus {
+  color: #c34c48; }
+
+::selection {
+  background: #d9534f; }
+
+/* Header */
+.navbar-inverse {
+  background-color: #111; }
+
+.navbar-brand {
+  height: auto;
+  color: #fff !important;
+  font-family: 'Orbitron', sans-serif;
+  padding: 20px 15px 10px 15px;
+  text-shadow: #000 0px 3px 0px, #d9534f 0px 5px 0px; }
+
+.navbar-brand small {
+  color: #d9534f;
+  font-family: sans-serif;
+  font-size: 40%;
+  text-shadow: none; }
+
+.navbar-nav > li > a {
+  color: #fff !important;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 20px 15px 10px 15px; }
+
+@media (max-width: 992px) {
+  .navbar-nav > li > a {
+    line-height: 20px !important; } }
+.navbar-nav > li > a:hover {
+  text-decoration: underline; }
+
+/* Content */
+.content {
+  margin-top: 115px;
+  margin-bottom: 30px;
+  padding: 15px 20px 15px 20px;
+  background-color: #fff;
+  border-radius: 5px; }
+
+.content .img-responsive {
+  margin: 0 auto; }
+
+/* News */
+.news {
+  padding: 0 20px 0 0;
+  margin-bottom: -20px; }
+
+@media (max-width: 768px) {
+  .news {
+    padding-right: 0; } }
+.article {
+  padding: 0;
+  margin-bottom: 30px;
+  background-color: #fff; }
+  .article h3 {
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black; }
+  .article small {
+    padding: 3px 7px;
+    font-size: 14px !important;
+    text-transform: none;
+    font-size: 18px;
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    color: #000; }
+  .article .caption {
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    font-size: 13px; }
+  .article p {
+    text-align: justify; }
+
+/* Menu */
+.menu {
+  padding: 0;
+  text-align: left; }
+  .menu h1 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #000; }
+    .menu h1 span.glyphicon {
+      font-size: 18px; }
+
+/* Progress */
+.raid-title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  padding: 10px;
+  background-size: cover;
+  background-position: top;
+  margin-bottom: 5px; }
+
+.progress-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 600;
+  color: #333; }
+
+.progress-bar-danger {
+  background-color: #d9534f; }
+
+.tooltip.in {
+  filter: alpha(opacity=100);
+  opacity: 1; }
+
+.tooltip-inner {
+  padding: 8px; }
+
+/* Recrutement */
+.recrutement th {
+  text-align: center;
+  padding: 3px 0 !important; }
+.recrutement td {
+  padding: 1px !important;
+  height: 20px; }
+.recrutement td:first-child {
+  width: 20px; }
+.recrutement img {
+  height: 20px; }
+.recrutement tbody span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0; }
+.recrutement tfoot {
+  text-align: center; }
+
+/* Other pages */
+.page {
+  margin-bottom: -15px; }
+
+/*# sourceMappingURL=style.css.map */
